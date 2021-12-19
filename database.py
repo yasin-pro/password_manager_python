@@ -62,6 +62,6 @@ class UsersData():
 		self.data = self.cursor.fetchall()
 		for self.user_info in self.data:
 			if self.password == self.user_info[3]:
-				if self.name == self.user_info[0]:
+				if self.name == self.user_info[1]:
 					return self.user_info
 		return ''
